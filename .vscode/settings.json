@@ -7,5 +7,9 @@
         "unsplashed",
         "usuario",
         "web"
-    ]
+    ],
+    "terminal.integrated.shellArgs.windows": null,
+    "files.autoSave": "afterDelay",
+    "editor.accessibilityPageSize": 14,
+    "editor.fontSize": 15
 }
