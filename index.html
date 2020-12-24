@@ -75,38 +75,17 @@
   </nav>
 
   <!-- #################################  Header   ######################################### -->
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-
-        <br /><br />
-        <!-- 
-        <h1 class="header center teal-text text-lighten-2">
-          Parallax Template
-        </h1>
-        <div class="row center">
-          <h5 class="header col s12 light">
-            A modern responsive front-end framework based on Material Design
-          </h5>
-        </div>
-          <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button"
-            class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-          </div>
-        -->
-
-
-
-
-        <br /><br />
-      </div>
-    </div>
-    <div class="parallax">
-      <img src="img/background1.jpg" alt="Unsplashed background img 1" />
+  
+  <!------------------- Carousel ---------------->
+  <div class="">
+    <div class="carousel carousel-slider">
+      <a class="carousel-item responsive-img" href="#one!"><img src="img/background1.jpg"></a>
+      <a class="carousel-item responsive-img" href="#two!"><img src="img/background2.jpg"></a>
+      <a class="carousel-item responsive-img" href="#three!"><img src="img/background3.jpg"></a>
     </div>
 
   </div>
+
 
   <div class="container">
     <div class="section">
@@ -224,10 +203,12 @@
         <div class="col l6 s12">
           <h5 class="white-text">Compañia V&V Security</h5>
           <p class="grey-text text-lighten-4">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Somos una empresa con una amplia gama de servicios, dirigidos a satisfacer los requerimientos de
-            protección mediante el uso de servicios informáticos física y servicios especiales. V & V Security, en Chile, esta
-            dirigido por profesionales chilenos de vasta trayectoria empresarial y con una gran experiencia en el campo
-            de la seguridad.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Somos una empresa con una amplia gama de servicios, dirigidos a satisfacer
+            los requerimientos de protección mediante el uso de servicios informáticos, físicos y servicios especiales.
+            V & V Security, en
+            Chile, esta dirigido por profesionales chilenos, de vasta trayectoria empresarial y con una gran experiencia
+            en el campo
+            de la seguridad, con una alta responsabilidad en el compromiso con nuestro clientes.
           </p>
         </div>
         <div class="col l3 s12">
@@ -254,13 +235,19 @@
           <h5 class="white-text">Contactanos</h5>
           <ul>
             <li><a class="white-text valign-wrapper hoverable" href="https://www.vvsecurity.cl/contacto/"><i
-                  class="material-icons left tiny">inbox</i>Formulario de Contacto</a></li>
+                  class="material-icons left tiny">contact_mail</i>Formulario de Contacto</a></li>
+            <br>
             <li><a class="white-text valign-wrapper "><i class="material-icons left tiny">phone</i>
                 <strong>+56 43 2340379</strong></a></li>
+            <br>
             <li><a class="white-text valign-wrapper "><i class="material-icons left tiny">call</i>
                 <strong>+56 43 2340379</strong></a></li>
+            <br>
             <li><a class="white-text valign-wrapper"><i
                   class="material-icons left tiny">mail</i>contacto@vvsecurity.cl</a></li>
+            <br>
+            <li><a class="white-text valign-wrapper hoverable" href="https://www.vvsecurity.cl/trabaja-con-nosotros/"><i
+                  class="material-icons left tiny">inbox</i>Trabaja con nosotros</a></li>
           </ul>
         </div>
       </div>
@@ -275,6 +262,21 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    var elem = document.querySelector('.carousel');
+    var instance = M.Carousel.init(elem, {
+      indicators: true,
+      duration: 600,
+      fullWidth: true
+    });
+
+    setInterval(() => {
+      console.log(instance.pressed);
+      if (!instance.pressed) {
+        instance.next();
+      }
+    }, 2000)
+  </script>
 </body>
 
 </html>
