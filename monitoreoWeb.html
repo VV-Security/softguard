@@ -13,7 +13,7 @@
 </head>
 <!-- #################################  navbar   ######################################### -->
 
-<body>
+<body class="light-blue lighten-5">
     <nav class="white blue-text" role="navigation">
         <div class="nav-wrapper">
             <a id="logo-container" href="https://www.vvsecurity.cl" class="brand-logo center-align">
@@ -85,17 +85,47 @@
     <!-- #################################  Header   ######################################### -->
     <div class="row">
         <div class="container">
-            <div class="card-panel">
+            <div class="card-panel z-depth-5">
                 <div class="slider">
                     <ul class="slides">
                         <li>
                             <img src="img/monitereoWeb/slide.jpg" class="responsive-img"> <!-- random image -->
                             <div class="caption center-align">
-                                <h3>This is our big Tagline!</h3>
-                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                                <h3>MONITOREO WEB</h3>
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="card-panel z-depth-5">
+                <div class="row">
+                    <h3 class="center-align">Administra tus eventos</h3>
+                    <div class="col s12 hoverable">
+                        <img src="img/App Desktop/MonitoreoWebDesktop.jpg" class="materialboxed responsive-img">
+                    </div>
+
+                    <div class="col s12">
+                        <br>
+                        <h4 class="center-align">Principales Características</h4>
+                        <div class="col s12 center-align">
+                            Atención de eventos en tiempo real forma simultánea.
+                            Visualización en una misma ventana de eventos pendientes y en espera.
+                            Realizar llamadas por Volp.
+                            Asignar Servicios Técnicos durante la atención de un evento.
+                            Auto-monitoreo.
+                            Procesamiento múltiple con selección individual de eventos.
+                            Control de horario de aperturas y cierres, múltiples por día.
+                            Control de testeos automáticos programables con aviso de falla.
+                            Control de falsas alarmas inteligentes con aviso al operador por límites de fecha o de
+                            cantidad.
+                            Modo de prueba para post-instalación con alcance global por cuenta, por zona o por tipo de
+                            evento.
+                            Registro de instrucciones para la atención de eventos según procedimiento preestablecido
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,10 +216,11 @@
         }, 7500);
         $(document).ready(function () {
             $('.slider').slider({
-                indicators: true,
+                indicators: false,
                 transition: 2500,
                 interval: 3500,
-                height: 800
+                height: 500,
+                fullWidth: 700
 
             });
             $('.materialboxed').materialbox();
