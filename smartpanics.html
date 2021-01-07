@@ -83,13 +83,12 @@
     </nav>
     <!-- #################################  Header   ######################################### -->
     <!---------- Primer Card Panel Menu SmartPanics --------->
-    <div class="row">
+    <div class="row valign-wrapper">
         <div class="col s7">
             <div class="card-panel z-depth-5">
                 <div class="row">
                     <div class="col s7">
-                        <img class="responsive-img circle materialboxed"
-                            src="img/Mockup Ready App Mobile/menuSmartpanics.jpg">
+                        <img class="responsive-img circle materialboxed" src="img/mobileApk/menuSmartpanics.jpg">
                     </div>
                     <div class="col s5">
                         <h3>¿Que es SmartPanics?</h3>
@@ -127,23 +126,23 @@
                 <div class="row">
                     <h3 class=" center-align">La seguridad de la conectividad</h3>
                     <div class="col s4">
-                        <img src="img/IMGsmartpanics/celular.jpg" class="responsive-img" width="250" />
+                        <img src="img/smartpanicsWEB/celular.jpg" class="responsive-img" width="250" />
                     </div>
                     <div class="col s4">
-                        <img src="img/IMGsmartpanics/compra.jpg" class="responsive-img" width="240" height="210" />
+                        <img src="img/smartpanicsWEB/compra.jpg" class="responsive-img" width="240" height="210" />
                     </div>
                     <div class="col s4">
-                        <img src="img/IMGsmartpanics/denuncias.jpg" class="responsive-img" width="230" />
+                        <img src="img/smartpanicsWEB/denuncias.jpg" class="responsive-img" width="230" />
                     </div>
                     <div class="col s4">
-                        <img src="img/IMGsmartpanics/intuitivo.jpg" class="responsive-img" width="250" />
+                        <img src="img/smartpanicsWEB/intuitivo.jpg" class="responsive-img" width="250" />
                     </div>
                     <div class="col s4">
-                        <img src="img/IMGsmartpanics/nuevasFunciones.jpg" class="responsive-img" width="240"
+                        <img src="img/smartpanicsWEB/nuevasFunciones.jpg" class="responsive-img" width="240"
                             height="210" />
                     </div>
                     <div class="col s4">
-                        <img src="img/IMGsmartpanics/viasComunicacion.jpg" class="responsive-img" width="230"
+                        <img src="img/smartpanicsWEB/viasComunicacion.jpg" class="responsive-img" width="230"
                             height="210" />
                     </div>
                 </div>
@@ -168,8 +167,7 @@
                         </blockquote>
                     </div>
                     <div class="col s7">
-                        <img class="responsive-img circle materialboxed"
-                            src="img/Mockup Ready App Mobile/trackCarSmartpanics.jpg">
+                        <img class="responsive-img circle materialboxed" src="img/mobileApk/trackCarSmartpanics.jpg">
                     </div>
                 </div>
                 <br>
@@ -182,8 +180,7 @@
             <div class="card-panel z-depth-5">
                 <div class="row">
                     <div class="col s7">
-                        <img class="responsive-img circle materialboxed"
-                            src="img/Mockup Ready App Mobile/gruposSmartpanics1.jpg">
+                        <img class="responsive-img circle materialboxed" src="img/mobileApk/gruposSmartpanics1.jpg">
                     </div>
                     <div class="col s5">
                         <h3>Mis Grupos</h3>
@@ -240,10 +237,10 @@
             <div class="card-panel">
                 <div class="row">
                     <div class="col s6">
-                        <img src="img/IMGsmartpanics/cuadroUno.jpg" class="responsive-img">
+                        <img src="img/smartpanicsWEB/cuadroUno.jpg" class="responsive-img">
                     </div>
                     <div class="col s6">
-                        <img src="img/IMGsmartpanics/cuadroDos.jpg" class="responsive-img">
+                        <img src="img/smartpanicsWEB/cuadroDos.jpg" class="responsive-img">
                     </div>
                 </div>
             </div>
@@ -263,14 +260,40 @@
                         </blockquote>
                     </div>
                     <div class="col s7">
-                        <img class="responsive-img circle materialboxed"
-                            src="img/Mockup Ready App Mobile/camarasSmartpanics.jpg">
+                        <img class="responsive-img circle materialboxed" src="img/mobileApk/camarasSmartpanics.jpg">
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+    <!-- Quinto CardPanel--------------- Imágenes Extras -------------------->
+
+
+    <div class="row">
+        <div class="card-panel">
+            <div class="row">
+                <div class="col s12">
+                    <div class="col s4 hoverable">
+                        <h5 class="center-align">Mi Grupo ubicaciones</h5>
+                        <img src="img/mobileApk/extras/gruposSmartpanics2.jpg" class="responsive-img materialboxed">
+                        <br>
+                    </div>
+                    <div class="col s4 hoverable">
+                        <h5 class="center-align">Mi Grupo registro notificaciones </h5>
+                        <img src="img/mobileApk/extras/gruposSmartpanics3.jpg" class="responsive-img materialboxed">
+                        <br>
+                    </div>
+                    <div class="col s4 hoverable">
+                        <h5 class="center-align">Mi Grupo eventos</h5>
+                        <img src="img/mobileApk/extras/gruposSmartpanics4.jpg" class="responsive-img materialboxed">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- #################################  Footer   ######################################### -->
 
     <footer class="page-footer blue darken-4">
@@ -343,19 +366,7 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script>
-        var elem = document.querySelector('.carousel');
-        var instance = M.Carousel.init(elem, {
-            indicators: true,
-            duration: 850,
-            fullWidth: true
-        });
 
-        setInterval(() => {
-            console.log(instance.pressed);
-            if (!instance.pressed) {
-                instance.next();
-            }
-        }, 7500);
         $(document).ready(function () {
             $('.slider').slider({
                 indicators: true,
@@ -365,7 +376,11 @@
 
             });
             $('.materialboxed').materialbox();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
         });
+
     </script>
 </body>
 
