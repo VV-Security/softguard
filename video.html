@@ -83,13 +83,23 @@
         </div>
     </nav>
     <!-- #################################  Header   ######################################### -->
-        <div class="row">
-            <div class="container">
-                <div class="card-panel">
+    <div class="row">
+        <div class="container">
+            <div class="card-panel">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/videoVigi/web_cam_etc.jpg" class="responsive-img"> <!-- random image -->
+                            <div class="caption right-align blue-text">
+                                <h3><strong>VIDEO VIGILANCIA</strong></h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
-                </div>                
             </div>
         </div>
+    </div>
     <!-- #################################  Footer   ######################################### -->
     <footer class="page-footer blue darken-4">
         <div class="container">
@@ -163,7 +173,7 @@
     <script>
         var elem = document.querySelector('.carousel');
         var instance = M.Carousel.init(elem, {
-            indicators: true,
+            indicators:false,
             duration: 850,
             fullWidth: true
         });
@@ -176,7 +186,7 @@
         }, 7500);
         $(document).ready(function () {
             $('.slider').slider({
-                indicators: true,
+                indicators: false,
                 transition: 2500,
                 interval: 3500,
                 height: 800
